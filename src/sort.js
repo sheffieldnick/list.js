@@ -17,7 +17,7 @@ module.exports = function(list) {
       } else if (list.utils.classes(btn).has('asc')) {
         return "desc";
       } else {
-        var defaultOrder = getAttribute(btn, 'data-default-order');
+        var defaultOrder = list.utils.getAttribute(btn, 'data-default-order');
         if (defaultOrder == "asc" || defaultOrder == "desc") {
           return defaultOrder;
         } else {
